@@ -3595,8 +3595,8 @@ a.skip-link {
     /* Hide until displayed. */
   }
   .nav-primary li.level1 ul {
-    left: 60px;
-    top: 15px;
+    left: 227px;
+    top: -1px;
   }
   .nav-primary li.level0 ul.level0.position-test {
     display: block;
