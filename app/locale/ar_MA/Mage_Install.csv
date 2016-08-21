@@ -83,7 +83,7 @@
 "Proceed With Automatic Download (%s)","الاستمرار بالتنزيل الآلي (%s)"
 "Provide a complete base URL for SSL connection. For example: %s","توفير قاعدة كاملة للموقع SSL الصدد. على سبيل المثال: %s"
 "Report All Bugs","الإبلاغ عن كل الأخطاء"
-"Required Fields","حقول مطلوبة"
+"Required Fields","معلومات ضرورية"
 "Run admin interface with SSL","التفاعل مع تشغيل ادارة SSL"
 "Run this in your shell from Magento root folder:","تشغيل هذا بنفسك في شل magento من المجلد الجذر:"
 "Save session data in","Save session data in"
