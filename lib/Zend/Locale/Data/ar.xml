@@ -5845,7 +5845,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="few" draft="contributed">درهم مغربي</displayName>
 				<displayName count="many" draft="contributed">درهم مغربي</displayName>
 				<displayName count="other" draft="contributed">درهم مغربي</displayName>
-				<symbol>د.م.‏</symbol>
+				<symbol>درهم‏</symbol>
 			</currency>
 			<currency type="MAF">
 				<displayName>فرنك مغربي</displayName>
