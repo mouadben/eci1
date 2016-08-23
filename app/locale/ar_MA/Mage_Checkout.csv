@@ -87,7 +87,7 @@
 "Edit Terms and Conditions","Edit Terms and Conditions"
 "Edit Your Cart","تحرير عربة التسوق خاصتك"
 "Email Address","البريد الإلكتروني"
-"Enable Terms and�Conditions","Enable Terms and�Conditions"
+"Enable Terms and�Conditions","Enable Terms and�Conditions"
 "Enabled","Enabled"
 "Enter a New Address","قم بإدخال عنوانا جديدا"
 "Enter your coupon code if you have one.","إذا كنت تملك كوبونا فقم بإدخال الكود."
@@ -235,3 +235,4 @@
 "Checkout","Checkout"
 "Shopping Cart is Empty","Shopping Cart is Empty"
 "Please <a href=""%s"">continue shopping</a>.","Please <a href=""%s"">continue shopping</a>."
+"Cart","عربة"
