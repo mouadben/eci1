@@ -501,12 +501,12 @@ a {
 }
 
 a:hover {
-  color: #a2da34;
+  color: #444441;
   text-decoration: underline;
 }
 
 a:focus {
-  outline-color: #b7f146;
+  outline-color: #444443;
   color: #143d52;
 }
 
@@ -825,21 +825,21 @@ body:not(.customer-account) .block:first-child .block-title {
 .cart-table .product-cart-actions .button:hover,
 #co-shipping-method-form .buttons-set .button:hover,
 .footer .button:hover {
-  background: #a2da34;
+  background: #444441;
   cursor: pointer;
 }
 .button:active,
 .cart-table .product-cart-actions .button:active,
 #co-shipping-method-form .buttons-set .button:active,
 .footer .button:active {
-  background: #b2de5c;
+  background: #444440;
   color: #FFFFFF;
 }
 .button:focus,
 .cart-table .product-cart-actions .button:focus,
 #co-shipping-method-form .buttons-set .button:focus,
 .footer .button:focus {
-  background-color: #b2de5c;
+  background-color: #444440;
   outline: none;
   color: #FFFFFF;
 }
@@ -2693,7 +2693,7 @@ body {
  * ============================================ */
 .header-language-background {
   padding: 10px;
-  background-color: #f88537;
+  background-color: #444442;
   text-transform: uppercase;
 }
 .header-language-background .header-language-container {
@@ -2729,7 +2729,7 @@ body {
 
 .header-language-background,
 .header-language-background a {
-  color: #e6e6e6;
+  color: #ffffff;
 }
 
 /* ============================================ *
@@ -2907,6 +2907,8 @@ a.skip-link {
 .nav-primary {
   display: block;
   margin-top: 15px;
+    background-color: #444442;
+color: #ffffff;
 }
 
 /* ============================================ *
@@ -2934,6 +2936,7 @@ a.skip-link {
 
 .nav-primary li.level0 > a {
   text-transform: uppercase;
+    color: #ffffff;
 }
 
 /* ============================================ *
@@ -7147,10 +7150,10 @@ div.paypal-logo span > img {
   position: relative;
 }
 .slideshow-pager span:hover:before {
-  background-color: #a2da34;
+  background-color: #444441;
 }
 .slideshow-pager span.cycle-pager-active:before {
-  background-color: #b2de5c;
+  background-color: #444440;
 }
 .slideshow-pager > * {
   cursor: pointer;
@@ -7205,7 +7208,7 @@ div.paypal-logo span > img {
   left: 10px;
 }
 .slideshow-prev:hover:before {
-  border-color: transparent #a2da34 transparent transparent;
+  border-color: transparent #444441 transparent transparent;
 }
 
 .slideshow-next {
@@ -7218,7 +7221,7 @@ div.paypal-logo span > img {
   right: 10px;
 }
 .slideshow-next:hover:before {
-  border-color: transparent transparent transparent #a2da34;
+  border-color: transparent transparent transparent #444441;
 }
 
 .cycle-caption {
@@ -7631,7 +7634,7 @@ div.paypal-logo span > img {
   text-align: left;
 }
 .search-autocomplete ul li:hover {
-  color: #a2da34;
+  color: #444441;
 }
 .search-autocomplete ul li.selected {
   background-color: #f88537;
