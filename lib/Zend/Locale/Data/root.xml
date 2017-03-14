@@ -3260,6 +3260,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<alias source="locale" path="../currencyFormats[@numberSystem='latn']"/>
 		</currencyFormats>
 		<currencies>
+            <currency type="MAD">
+                <symbol alt="narrow">DH</symbol>
+            </currency>
 			<currency type="ARS">
 				<symbol alt="narrow">$</symbol>
 			</currency>
