@@ -1273,8 +1273,8 @@ a.button:hover {
   max-height: 125px;
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #cccccc;
-  background: #f4f4f4;
+  /*border: 1px solid #cccccc;
+  background: #f4f4f4;*/
 }
 
 /* -------------------------------------------- *
@@ -6970,7 +6970,7 @@ p.product-name a:hover {
 }
 
 .opc .section.allow .step-title .number {
-  background-color: #99cce5;
+  background-color: #444444;
 }
 
 .opc .section.allow .step-title h2 {
