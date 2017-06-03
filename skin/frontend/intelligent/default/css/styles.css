@@ -4003,7 +4003,7 @@ a.skip-link {
 }
 .footer .links {
   float: left;
-  width: 17%;
+  width: 20%;
   padding: 0 30px 0 0;
   margin-bottom: 30px;
 }
@@ -10607,3 +10607,36 @@ div.calendar table td.button {
   color: inherit;
   text-transform: none;
 }
+.network{
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    padding: 0 .5em 0 0;
+    font-size: 1.92em;
+}
+.background-network{
+    height: 56px;
+    background: url(images/network/network.png) no-repeat;
+}
+
+a:active,a:focus {
+    outline: none;
+}
+.icon-facebook {
+    width: 61.5px;
+    height: 54px;
+    display: inline-block;
+
+}
+.icon-youtube {
+    width: 64px;
+    height: 54px;
+    display: inline-block;
+}
+.icon-google {
+    width: 61.5px;
+    height: 54px;
+    display: inline-block;
+}
+
