@@ -61,6 +61,22 @@ Default layout, loads most of the pages
         </reference>
         <reference name="footer_links">
             <action method="addLink" translate="label title" module="catalog" ifconfig="catalog/seo/site_map"><label>Site Map</label><url helper="catalog/map/getCategoryUrl" /><title>Site Map</title></action>
+            <action method="addLink">
+                <label>Frais de Livraison</label>
+                <url>frais-de-livraison</url>
+                <title>Frais de Livraison</title>
+                <prepare>1</prepare>
+                <urlParams/>
+                <position>30</position>
+            </action>
+            <action method="addLink">
+                <label>Mentions légales</label>
+                <url>mentions-legales</url>
+                <title>Mentions légales </title>
+                <prepare>1</prepare>
+                <urlParams/>
+                <position>40</position>
+            </action>
         </reference>
         <block type="catalog/product_price_template" name="catalog_product_price_template" />
     </default>
