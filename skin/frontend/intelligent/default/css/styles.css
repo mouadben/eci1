@@ -1293,9 +1293,8 @@ a.button:hover {
 .footer-container {
   position: relative;
   max-width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-
+  margin: 0 auto;
+  padding: 15px;
 }
 .main-container:after,
 .footer-container:after {
@@ -1312,7 +1311,6 @@ a.button:hover {
 }
 .footer-container {
   padding: 30px;
-    
 }
 
 /* -------------------------------------------- *
@@ -3186,6 +3184,7 @@ body {
 .header-language-background {
   padding: 10px;
   background-color: #444442;
+
   text-transform: uppercase;
 }
 .header-language-background .header-language-container {
@@ -10607,6 +10606,7 @@ div.calendar table td.button {
   color: inherit;
   text-transform: none;
 }
+/*<<<<<<< HEAD*/
 .network{
     display: inline-block;
     height: 56px;
@@ -10640,3 +10640,24 @@ a:active,a:focus {
     display: inline-block;
 }
 
+/* deveci1  */
+/*
+.langs-wrapper {
+    height: 20px;
+    width: 100px;
+    margin-top: 0px;
+}
+
+.lang-flag {
+    width: 22px;
+    height: 13px;
+    float: right;
+    margin-right: 20px;
+    border: 1px solid transparent;
+}
+
+.lang-flag:hover {
+    border: 1px solid #FFF;
+}
+*/
+/* deveci1  */

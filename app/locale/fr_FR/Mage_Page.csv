@@ -67,9 +67,21 @@
 "Welcome, %s!","Bienvenue, %s !"
 "You must have JavaScript enabled in your browser to utilize the functionality of this website.","Javascript doit être activé dans votre navigateur pour utiliser toutes les fonctionnalités de ce site."
 "Your Language","Langue"
-"Your Language:","Votre langue :"
+"Your Language:","Langue/اللغة :"
 "per page","par page"
+
 "&copy; 2012 Magento Demo Store. All Rights Reserved.","&copy; 2012 Boutique de démo Magento. Tous droits réservés."
 "Allow","Autoriser"
 "JavaScript seems to be disabled in your browser.","Javascript est désactivé dans votre navigateur."
 "This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href=""%s"">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.","Ce site web utilise des cookies pour fournir l'intégralité de ses fonctionnalités. Pour plus d'informations sur les données contenues dans les cookies, vous pouvez consulter notre <a href=""%s"">page de politique de confidentialité</a>. Pour accepter l'utilisation de cookies sur ce site, veuillez cliquer sur le bouton 'Autoriser' ci-dessous."
+
+
+"(ver. %s)","(ver. %s)"
+"Help Us to Keep Magento Healthy","Help Us to Keep Magento Healthy"
+"Report All Bugs","Report All Bugs"
+"French","francais"
+"French ","francais"
+" French","francais"
+"french","francais"
+"french ","francais"
+
