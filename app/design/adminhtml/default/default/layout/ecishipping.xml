@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <adminhtml_sales_order_create_index>
+        <reference name="head">
+            <action method="addCss"><name>ecishipping.css</name></action>
+            <action method="addJs"><script>ecishipping/adminhtml/ecishipping.js</script></action>
+        </reference>
+        <reference name="notifications">
+            <block type="adminhtml/template" template="ecishipping/order/create/js.phtml" name="create_ecishipping"/>
+        </reference>
+    </adminhtml_sales_order_create_index>
+</layout>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <eciintel translate="title" module="ecishipping">
+            <title>EC-Intelligent</title>
+            <sort_order>100</sort_order>
+        </eciintel>
+    </menu>
+    <menu>
+        <eciintel>
+            <children>
+                <ecishipping translate="title" module="ecishipping">
+                    <title>Shipping</title>
+                    <children>
+                        <method translate="title" module="ecishipping">
+                            <title>Methods</title>
+                            <action>adminhtml/ecishipping_method</action>
+                        </method>
+                        <item translate="title" module="ecishipping">
+                            <title>Items</title>
+                            <action>adminhtml/ecishipping_item</action>
+                        </item>
+                        <noship translate="title" module="ecishipping">
+                            <title>No Ship</title>
+                            <action>adminhtml/ecishipping_noship</action>
+                        </noship>
+                        <offset translate="title" module="ecishipping">
+                            <title>Delivering Offset</title>
+                            <action>adminhtml/ecishipping_offset</action>
+                        </offset>
+                    </children>
+                </ecishipping>
+            </children>
+        </eciintel>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <eciintel>
+                        <children>
+                            <ecishipping translate="title" modul="ecishipping">
+                                <title>Shipping</title>
+                                <children>
+                                    <method translate="title" modul="ecishipping">
+                                        <title>Method</title>
+                                    </method>
+                                    <item translate="title" modul="ecishipping">
+                                        <title>Items</title>
+                                    </item>
+                                    <noship translate="title" module="ecishipping">
+                                        <title>No Ship</title>
+                                    </noship>
+                                    <noship translate="title" module="ecishipping">
+                                        <title>No Ship</title>
+                                    </noship>
+                                    <offset translate="title" module="ecishipping">
+                                        <title>Delivering Offset</title>
+                                    </offset>
+                                    <manually_price translate="title" module="ecishipping">
+                                        <title>Manually Price</title>
+                                    </manually_price>
+                                </children>
+                            </ecishipping>
+                        </children>
+                    </eciintel>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

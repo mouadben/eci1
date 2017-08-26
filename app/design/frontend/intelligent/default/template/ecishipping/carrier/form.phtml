@@ -1,0 +1,155 @@
+<?php /** @var $this Eci_Ecishipping_Block_Carrier_Form */ ?>
+<?php echo $this->getDescription() ?>
+
+<h4><?php echo $this->__('1. Wunschlieferdatum wählen') ?> <span><?php echo $this->__('(empfohlen aber nicht erforderlich)') ?></span></h4>
+
+<div class="delivery-date">
+    <label for="delivery_date"><?php echo Mage::helper('ecishipping')->__('Delivery Date:') ?></label>
+    <input name="delivery_date" id="delivery_date" placeholder="-" value="" readonly="readonly" />
+    <span id="js-date-trigger"></span>
+</div>
+<div id="checkbox_container" class="no-display">
+    <input type="checkbox" name="delivery_accept" id="delivery_accept" value="1" />
+    <div>
+        <?php echo $this->getDeliveryAcceptText(); ?>
+    </div>
+</div>
+
+<?php $this->getValue(); // Prevent new line output for js ?>
+<script type="text/javascript">
+
+;(function($) {
+    var isFreeShipping = <?php echo $this->isFreeShipping() ? 'true' : 'false' ?>,
+        deliveryDay = '<?php echo $this->getValue() ?>',
+        methodPrefix = 's_method_ecishipping_',
+        dateMethods = <?php echo $this->getDateMethods(true) ?>;
+
+    /**
+     * Initialize EC-Intelligent Shipping functionality
+     */
+    function initEcishipping() {
+
+        // Create date from tomorrow
+        var objDate = new Date();
+        objDate.setDate(objDate.getDate() + 1);
+
+        // Create the datepicker
+        datePickerController.createDatePicker({
+            formElements: {
+                "delivery_date": "%d.%m.%Y"
+            },
+            showWeeks: true,
+            disabledDays:[0,0,0,0,0,0,1],
+            rangeLow: objDate,
+            positioned: "js-date-trigger",
+            callbackFunctions: {
+                'datereturned': [onUpdate]
+            }
+        });
+
+        if (!isFreeShipping) {
+
+            //Remove unuset shipping method nodes
+            var arrMethods = Object.values(dateMethods).flatten().uniq();
+            $.each($('.sp-methods input[name="shipping_method"]'), function () {
+                if (arrMethods.indexOf($(this).attr('id').replace(methodPrefix, '')) == -1) {
+                    $(this).parent().remove()
+                }
+            });
+
+            // Disable all shipping methods
+            disableEcishippingMethods();
+
+            // Enable only shipping methods which are compatible to the delivery date
+            enableEcishippingMethods(deliveryDay);
+
+            // Add active class to checked checkbox
+            addCheckboxState();
+        }
+    }
+
+    /**
+     * Disable all shipping methods
+     */
+    function disableEcishippingMethods() {
+        $.each(Object.values(dateMethods).flatten().uniq(), function (i, methodeCode) {
+            var objElement = $('#' + methodPrefix + methodeCode);
+            if (objElement.length > 0) {
+                objElement.prop('checked', false)
+                    .prop('disabled', true)
+                    .parent()
+                    .removeClass('enabled')
+                    .addClass('disabled');
+            }
+        });
+    }
+
+    /**
+     * Enable only shipping methods which are compatible to the delivery date
+     *
+     * @param deliveryDay {yyyy-mm-dd}
+     */
+    function enableEcishippingMethods(deliveryDay) {
+        if (dateMethods && deliveryDay && ($.type(dateMethods[deliveryDay]) !== 'undefined')) {
+            $.each(dateMethods[deliveryDay], function (i, methodCode) {
+                var objElement = $('#'+ methodPrefix + methodCode);
+                if (objElement.length > 0) {
+                    objElement.prop('disabled', false)
+                        .parent()
+                        .removeClass('disabled')
+                        .addClass('enabled');
+                }
+            });
+        }
+    }
+
+    /**
+     *  Add active class to checked checkbox
+     */
+    function addCheckboxState() {
+        $('.sp-methods input[name="shipping_method"]').click(function(e) {
+            $('.sp-methods input[name="shipping_method"]').parent().removeClass('active');
+            $(this).parent().addClass('active');
+        });
+    }
+
+    /**
+     * Show selected date set delivery date var
+     */
+    function onUpdate(data) {
+
+        if (!isFreeShipping) {
+            var deliveryDay = data.yyyy + '-' + data.mm + '-' + data.dd,
+                objCheckboxContainer = $('#checkbox_container'),
+                objCheckbox = $('delivery_accept');
+
+            if (deliveryDay) {
+                if (objCheckboxContainer.length > 0) {
+                    objCheckboxContainer.removeClass('no-display');
+                }
+            } else {
+                if (objCheckboxContainer.length > 0) {
+                    objCheckboxContainer.addClass('no-display');
+                }
+
+                if (objCheckbox.length > 0) {
+                    objCheckbox.prop('checked', false);
+                }
+            }
+
+            // Disable all shipping methods
+            disableEcishippingMethods();
+
+            // Enable only shipping methods which are compatible to the delivery date
+            enableEcishippingMethods(deliveryDay);
+
+            // Remove active class
+            $('.sp-methods input[name="shipping_method"]').parent().removeClass('active');
+        }
+    }
+
+    // Initialize EC-Intelligent Shipping functionality
+    initEcishipping();
+}(jQuery));
+
+</script>

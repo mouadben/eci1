@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Eci_Ecishipping>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Eci_Ecishipping>
+    </modules>
+</config>
