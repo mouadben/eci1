@@ -90,6 +90,6 @@
 "Invalid %s ""%s"" in the Row #%s.","%s ""%s"" non valide à la ligne n°%s."
 "Invalid Country ""%s"" in the Row #%s.","Pays ""%s"" non valide à la ligne n°%s."
 "Invalid Region/State ""%s"" in the Row #%s.","Région ""%s"" non valide à la ligne n°%s."
-"Invalid Shipping Price ""%s"" in the Row #%s.","Frais de port ""%s"" non valide à la ligne n°%s."
+"Invalid Shipping Price ""%s"" in the Row #%s.","Frais d'expédition ""%s"" non valide à la ligne n°%s."
 "Invalid Table Rates format in the Row #%s","Format du tableau de tarifs non valide à la ligne n°%s."
 "Use origin weight (few requests)","Utiliser le poids d'origine (peu de requêtes)"

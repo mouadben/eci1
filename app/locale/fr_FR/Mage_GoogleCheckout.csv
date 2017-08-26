@@ -1,5 +1,5 @@
 "* Select shipping method","* Sélectionnez un mode de livraison"
-"<strong style=""color:red"">Warning!</strong> This option disables the merchant calculated shipping. With this option, Google API ignores any attempt to affect shipping prices.","<strong style=""color:red"">Attention !</strong> Cette option désactive le frais de port calculés par le marchand. Avec cette option, l'API Google ignore toute tentative de modification des frais de port."
+"<strong style=""color:red"">Warning!</strong> This option disables the merchant calculated shipping. With this option, Google API ignores any attempt to affect shipping prices.","<strong style=""color:red"">Attention !</strong> Cette option désactive le Frais d'expédition calculés par le marchand. Avec cette option, l'API Google ignore toute tentative de modification des Frais d'expédition."
 "A virtual item to reflect the discount total","Un produit virtuel pour refléter le total de remise"
 "A virtual item to reflect the tax total","Un produit virtuel pour refléter le total de taxes"
 "AVS Status: %s","Statut du système de vérification d'adresse (AVS)"
